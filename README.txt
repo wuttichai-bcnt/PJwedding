@@ -1,6 +1,6 @@
 
 TITLE: 
-Wedding - 100% Fully Responsive Free HTML5 Bootstrap Template
+PJwedding
 
 AUTHOR:
 DESIGNED & DEVELOPED by GetTemplates.co
