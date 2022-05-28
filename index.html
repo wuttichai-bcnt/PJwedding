@@ -11,6 +11,7 @@
 	<meta name="description" content="PJwedding" />
 	<meta name="keywords" content="PJwedding,Wedding" />
 	<meta name="author" content="Wuttichai Petthong" />
+	<link rel="shortcut icon" href="images/pj.png" type="image/x-icon" />
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -82,29 +83,6 @@
 					<div id="fh5co-logo"><a href="index.html">PJwedding<strong>.</strong></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
-					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">Story</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
 				</div>
 			</div>
 			
@@ -121,7 +99,6 @@
 							<h1>Phunsaya &amp; Wuttichai</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
 					</div>
 				</div>
@@ -134,7 +111,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
-					<h3 class="thai">8 สิงหาคม 2565</h3>
+					<h3 class="thai">8 สิงหาคม 2566</h3>
 					<p>We invited you to celebrate our wedding</p>
 				</div>
 			</div>
@@ -618,9 +595,10 @@
 
     // default example
     simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
+        2023: d.getFullYear(),
+        08: d.getMonth() + 1,
+        09: d.getDate(),
+		enableUtc: true
     });
 
     //jQuery example
@@ -628,7 +606,7 @@
         year: d.getFullYear(),
         month: d.getMonth() + 1,
         day: d.getDate(),
-        enableUtc: false
+        enableUtc: true
     });
 </script>
 
