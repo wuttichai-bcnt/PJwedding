@@ -106,7 +106,6 @@
 			</div>
 		</div>
 	</header>
-	<embed src="images/music.mp3" loop="true" autostart="true" width="2" height="0">
 	<div id="fh5co-couple">
 		<div class="container">
 			<div class="row">
@@ -548,11 +547,10 @@
 		</div>
 	</footer>
 	</div>
-
+	<audio id="music" src="images/music.mp3" style="display: none;" loop></audio>
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -596,7 +594,16 @@
         day: d.getDate(),
         enableUtc: true
     });
+	const music = document.getElementById("music");
+
+		document.body.addEventListener("mousemove", function () {
+			music.play().then(() => {
+		//Hide the loader and show the content
+			});
+		})
+
 </script>
+	
 
 	</body>
 </html>
