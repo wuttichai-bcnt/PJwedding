@@ -108,6 +108,16 @@
 	</header>
 	<div id="fh5co-couple">
 		<div class="container">
+			<div class="row my-4">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h3 class="thai">กดเล่นเพลงหน่อยน๊าา ก่อนไปต่อ</h3>
+					<audio controls>
+						<source src="images/music.mp3" type="audio/mpeg">
+						<p>Your browser doesn't support HTML5 audio. Here is
+						   a <a href="images/music.mp3">link to the audio</a> instead.</p>
+					  </audio>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
@@ -523,8 +533,7 @@
 			</div>
 		</div>
 	</div>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/1H3P2CLyb6Y?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<div class="container">
+		<div class="container">
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
@@ -601,6 +610,12 @@
 	// 	//Hide the loader and show the content
 	// 		});
 	// 	})
+
+	var vid = document.getElementById("myVideo");
+		function enableAutoplay() { 
+		vid.autoplay = true;
+		vid.load();
+	}
 
 </script>
 	
