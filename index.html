@@ -523,10 +523,8 @@
 			</div>
 		</div>
 	</div>
-
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
-
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/1H3P2CLyb6Y?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="container">
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
@@ -547,7 +545,7 @@
 		</div>
 	</footer>
 	</div>
-	<audio id="music" src="images/music.mp3" style="display: none;" loop></audio>
+	<!-- <audio id="music" src="images/music.mp3" style="display: none;" loop></audio> -->
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -594,13 +592,15 @@
         day: d.getDate(),
         enableUtc: true
     });
-	const music = document.getElementById("music");
 
-		document.body.addEventListener("mousemove", function () {
-			music.play().then(() => {
-		//Hide the loader and show the content
-			});
-		})
+	$('iframe#your_video')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+	// const music = document.getElementById("music");
+
+	// 	document.body.addEventListener("mousemove", function () {
+	// 		music.play().then(() => {
+	// 	//Hide the loader and show the content
+	// 		});
+	// 	})
 
 </script>
 	
