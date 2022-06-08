@@ -7,6 +7,6 @@ $fp=fopen("datacollection.csv","a+"); //use a+ instead of w
 fputcsv($fp, array($name, (string)$email), ',');
 fclose($fp);
 
-header( "location: http://localhost/PJwedding" );
+header( "location: https://wuttichai-bcnt.github.io/PJwedding/" );
 
 ?>
