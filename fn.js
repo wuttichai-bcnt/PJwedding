@@ -16,11 +16,14 @@ function addGS(){
     var phoneNo = document.getElementById("phoneNo").value;
     var address = document.getElementById("address").value;
 
+    const d = new Date();
+
+
 
       fetch(url, {
           method: "POST",
           mode: 'no-cors',
-          body: JSON.stringify({"col1": wish, "col2": name, "col3": phoneNo,"col4":address}),
+          body: JSON.stringify({"col1": wish, "col2": name, "col3": phoneNo,"col4":address,"col5":d.toLocaleString('th-TH', {timeZone: 'Asia/Bangkok',}),}),
           headers: {"Content-type": "application/json; charset=UTF-8"}
         })
         .then(response => response.json()) 
