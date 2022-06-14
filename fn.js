@@ -27,8 +27,6 @@ function addGS(){
         .then(json => console.log(json))
         .catch(err => console.log(err));
       
-        console.log("Clicked1");
-       
 }
 
 // document.getElementById("btn2").addEventListener("click",testGS)
