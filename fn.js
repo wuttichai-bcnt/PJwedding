@@ -30,7 +30,7 @@ function addGS(){
         $(".myAlert-top").show();
         setTimeout(function(){
           $(".myAlert-top").hide(); 
-        }, 2000);
+        }, 4000);
       
 }
 
