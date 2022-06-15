@@ -215,10 +215,10 @@
 
 	
 	$(function(){
-		mobileMenuOutsideClick();
-		parallax();
-		offcanvasMenu();
-		burgerMenu();
+		// mobileMenuOutsideClick();
+		// parallax();
+		// offcanvasMenu();
+		// burgerMenu();
 		contentWayPoint();
 		dropdown();
 		testimonialCarousel();
